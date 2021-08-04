@@ -1,0 +1,43 @@
+{
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedVariables": false,
+  "files.eol": "\r\n",
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "editor.fontSize": 14,
+  "editor.insertSpaces": true,
+  "workbench.iconTheme": "vs-seti",
+  "editor.wordWrap": "on",
+  "files.watcherExclude": {
+    "**/images/**": true
+  },
+  "terminal.integrated.fontSize": 13,
+  "window.zoomLevel": 0,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.packageManager": "npm",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsEnvVars": {
+    "GO111MODULE": "on"
+  },
+  "go.formatTool": "gofmt"
+}
