@@ -9,6 +9,17 @@ simplebar-reactがReact17系に対応してないので強制的に入れる
 ※simplebar-react公式はReact17系でも問題ないとのこと  
 4. npm run dev
 
+## 技術スタック  
+React 17.0.2  
+Next 11.0.1  
+SWR 0.5.6  
+ホスティング  
+vercel  
+
+[Apiサーバ](https://github.com/tsubasa111/learning-go-echo)    
+Go 1.5  
+echo 4  
+
 ## ディレクトリ構造  
 
 ```
@@ -18,7 +29,7 @@ simplebar-reactがReact17系に対応してないので強制的に入れる
 │   │           ├── index.tsx
 │   │           └── [PageName]
 │   ├── components
-│   │   ├── pages ページ単位で必要なパーツ
+│   │   ├── identities ページ単位で必要なパーツ
 │   │   │   └── [Page Name]
 │   │   │       └──[Component Name]
 │   │   │          ├── index.tsx
