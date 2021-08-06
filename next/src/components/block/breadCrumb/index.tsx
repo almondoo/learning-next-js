@@ -7,7 +7,7 @@ import Link from '../../atoms/link/index';
 const BreadCrumb = () => {
   const [breads, setBreads] = useState<string[]>([]);
   const router = useRouter();
-  console.log(router);
+  // console.log(router);
   useEffect(() => {
     const path = router.asPath;
     const escapeRoutes = Object.keys(routes).map((v) => {

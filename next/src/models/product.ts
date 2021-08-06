@@ -59,10 +59,19 @@ export type Product = {
 export type ProductList = {
   id: number;
   alt: string;
-  artist?: Artist;
   category: ProductCategory;
+  thumbnail: string;
   title: string;
-  src: string;
+  price: number;
+};
+
+export type ProductAndArtistList = {
+  id: number;
+  alt: string;
+  artist: Artist;
+  category: ProductCategory;
+  thumbnail: string;
+  title: string;
   price: number;
 };
 

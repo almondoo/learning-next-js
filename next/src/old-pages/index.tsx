@@ -1,4 +1,4 @@
-import Template from '../components-v2/templates/index/index';
+import Template from '../components/templates/index/index';
 import { ProductList } from '../models/product';
 import { Artist } from '../models/artist';
 import { ArticleList } from '../models/article';
@@ -67,7 +67,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
+        src: '/images/category/painting.jpeg',
       },
       {
         id: 2,
@@ -78,7 +78,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
+        src: '/images/category/pottery.jpeg',
       },
       {
         id: 3,
@@ -89,7 +89,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
+        src: '/images/category/photo.jpeg',
       },
       {
         id: 4,
@@ -100,7 +100,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
+        src: '/images/category/drawing.jpeg',
       },
       {
         id: 5,
@@ -111,7 +111,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
+        src: '/images/category/sculpture.jpeg',
       },
       {
         id: 6,
@@ -122,73 +122,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/print.jpeg',
-      },
-      {
-        id: 7,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
-      },
-      {
-        id: 8,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
-      },
-      {
-        id: 9,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
-      },
-      {
-        id: 10,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
-      },
-      {
-        id: 11,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
-      },
-      {
-        id: 12,
-        category: {
-          id: 1,
-          name: 'カテゴリー',
-        },
-        alt: 'index',
-        title: 'タイトルタイトルタイトル',
-        price: 3000,
-        thumbnail: '/images/category/print.jpeg',
+        src: '/images/category/print.jpeg',
       },
     ],
   },
@@ -213,7 +147,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
+        src: '/images/category/painting.jpeg',
       },
       {
         id: 2,
@@ -224,7 +158,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
+        src: '/images/category/pottery.jpeg',
       },
       {
         id: 3,
@@ -235,7 +169,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
+        src: '/images/category/photo.jpeg',
       },
       {
         id: 4,
@@ -246,7 +180,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
+        src: '/images/category/drawing.jpeg',
       },
       {
         id: 5,
@@ -257,7 +191,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
+        src: '/images/category/sculpture.jpeg',
       },
       {
         id: 6,
@@ -268,7 +202,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/print.jpeg',
+        src: '/images/category/print.jpeg',
       },
     ],
   },
@@ -293,7 +227,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
+        src: '/images/category/painting.jpeg',
       },
       {
         id: 2,
@@ -304,7 +238,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
+        src: '/images/category/pottery.jpeg',
       },
       {
         id: 3,
@@ -315,7 +249,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
+        src: '/images/category/photo.jpeg',
       },
       {
         id: 4,
@@ -326,7 +260,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
+        src: '/images/category/drawing.jpeg',
       },
       {
         id: 5,
@@ -337,7 +271,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
+        src: '/images/category/sculpture.jpeg',
       },
       {
         id: 6,
@@ -348,7 +282,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/print.jpeg',
+        src: '/images/category/print.jpeg',
       },
     ],
   },
@@ -373,7 +307,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
+        src: '/images/category/painting.jpeg',
       },
       {
         id: 2,
@@ -384,7 +318,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
+        src: '/images/category/pottery.jpeg',
       },
       {
         id: 3,
@@ -395,7 +329,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
+        src: '/images/category/photo.jpeg',
       },
       {
         id: 4,
@@ -406,7 +340,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
+        src: '/images/category/drawing.jpeg',
       },
       {
         id: 5,
@@ -417,7 +351,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
+        src: '/images/category/sculpture.jpeg',
       },
       {
         id: 6,
@@ -428,7 +362,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/print.jpeg',
+        src: '/images/category/print.jpeg',
       },
     ],
   },
@@ -453,7 +387,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/painting.jpeg',
+        src: '/images/category/painting.jpeg',
       },
       {
         id: 2,
@@ -464,7 +398,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/pottery.jpeg',
+        src: '/images/category/pottery.jpeg',
       },
       {
         id: 3,
@@ -475,7 +409,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/photo.jpeg',
+        src: '/images/category/photo.jpeg',
       },
       {
         id: 4,
@@ -486,7 +420,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/drawing.jpeg',
+        src: '/images/category/drawing.jpeg',
       },
       {
         id: 5,
@@ -497,7 +431,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/sculpture.jpeg',
+        src: '/images/category/sculpture.jpeg',
       },
       {
         id: 6,
@@ -508,7 +442,7 @@ const authorSliderItems: {
         alt: 'index',
         title: 'タイトルタイトルタイトル',
         price: 3000,
-        thumbnail: '/images/category/print.jpeg',
+        src: '/images/category/print.jpeg',
       },
     ],
   },
