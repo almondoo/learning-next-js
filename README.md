@@ -3,8 +3,8 @@
 ## 開発環境手順  
 1. make start-up
 2. make bash
-3. npm i --force
-2021/8/5  
+3. npm i --force  
+※2021/8/5  
 simplebar-reactがReact17系に対応してないので強制的に入れる  
 ※simplebar-react公式はReact17系でも問題ないとのこと  
 4. npm run dev
