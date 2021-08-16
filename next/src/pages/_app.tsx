@@ -1,32 +1,26 @@
-import "../styles/reset.css";
+import '../styles/reset.css';
 //- slick
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 //- slick
 //- simplebar
-import "simplebar/dist/simplebar.min.css";
-import "../styles/simplebar.scss";
+import 'simplebar/dist/simplebar.min.css';
+import '../styles/simplebar.scss';
 //- simplebar
 //- react-image-crop
-import "react-image-crop/dist/ReactCrop.css";
+import 'react-image-crop/dist/ReactCrop.css';
 //- react-image-crop
-import { useEffect } from "react";
-import { getCsrfApi } from "../api/fetch/csrf";
-import { SWRConfig, Revalidator } from "swr";
-import Layout from "../components/block/layout/index";
-import type { AppProps } from "next/app";
-import type { RevalidatorOptions } from "swr/dist/types";
+import { useCsrf } from '../api/swr/csrf';
+import { SWRConfig, Revalidator } from 'swr';
+import Layout from '../components/block/layout/index';
+import { setCsrf } from '../utils/auth';
+import type { AppProps } from 'next/app';
+import type { RevalidatorOptions } from 'swr/dist/types';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    getCsrfApi()
-      .then(() => {
-        //- ok
-      })
-      .catch(() => {
-        //- ng
-      });
-  }, []);
+  const { csrf } = useCsrf();
+  if (csrf) setCsrf(csrf);
+
   return (
     <Layout>
       <SWRConfig
@@ -38,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             key: string,
             config,
             revalidate: Revalidator,
-            { retryCount }: Required<RevalidatorOptions>
+            { retryCount }: Required<RevalidatorOptions>,
           ): void => {
             //- 404は再試行しない
             if (error.status === 404) return;

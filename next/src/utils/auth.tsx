@@ -44,24 +44,7 @@ export const setCookieCsrf = (): void => {
   }
 };
 
-export const getCsrf = (): string => {
-  const cookies = document.cookie;
-  const cookiesArray = cookies.split(';');
-
-  let csrf = '';
-  for (const c of cookiesArray) {
-    const cArray = c.split('=');
-    if (cArray[0] == '_csrf') {
-      const cookie = cArray[1];
-      if (cookie) {
-        csrf = cookie;
-      }
-    }
-  }
-  return csrf;
-};
-
-// export const getCsrf = (): string => window.localStorage.getItem(csrfToken) || '';
+export const getCsrf = (): string => window.localStorage.getItem(csrfToken) || '';
 
 export const setCsrf = (token: string): void => {
   token ? window.localStorage.setItem(csrfToken, token) : window.localStorage.removeItem(csrfToken);

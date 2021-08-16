@@ -1,4 +1,5 @@
 import { getCsrf } from '../../utils/auth';
+
 type Main = {
   method: string;
   mode: RequestMode;
@@ -7,7 +8,7 @@ type Main = {
   body?: string;
 };
 
-const Client = <S, D>(url: string, method: string, data?: D): Promise<S> => {
+const Client = async <S, D>(url: string, method: string, data?: D): Promise<S> => {
   url = 'http://localhost:8080/api' + url;
 
   const headers: HeadersInit = new Headers();

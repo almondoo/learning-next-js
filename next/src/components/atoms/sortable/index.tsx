@@ -1,23 +1,30 @@
-import { ReactNode, Dispatch, SetStateAction } from 'react';
-import { ReactSortable } from 'react-sortablejs';
+import { ReactNode } from 'react';
+import { SortableContainer, SortableElement } from 'react-sortable-hoc';
+
+const SortableItem = SortableElement(({ children }: { children: ReactNode }) => (
+  <li>{children}</li>
+));
 
 type Props = {
-  children: ReactNode;
   state: {
     id: number;
     value: string;
   }[];
-  setState: Dispatch<SetStateAction<{ id: number; value: string }[]>>;
+  items: ReactNode[];
   onSortEnd: ({ oldIndex, newIndex }: { oldIndex: number; newIndex: number }) => void;
   axis: 'x' | 'y' | 'xy';
 };
 
-const SortableContainer = ({ children, state, setState, ...props }: Props): JSX.Element => {
+const SortableList = SortableContainer(({ items }: Props) => {
   return (
-    <ReactSortable tag="ul" list={state} setList={setState} animation={200} {...props}>
-      {children}
-    </ReactSortable>
+    <ul>
+      {items.map((value, index) => {
+        <SortableItem key={index} index={index}>
+          {value}
+        </SortableItem>;
+      })}
+    </ul>
   );
-};
+});
 
-export default SortableContainer;
+export default SortableList;

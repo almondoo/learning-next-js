@@ -1,6 +1,6 @@
 import client from './client';
 
-const CropApi = (body: object = {}): Promise<Response> => {
+const CropApi = (body = {}): Promise<Response> => {
   return client('/crop', 'post', body);
 };
 
